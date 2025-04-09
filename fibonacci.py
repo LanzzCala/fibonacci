@@ -1,7 +1,10 @@
 def fib():
-    number = int(input("Enter a number for the fibonacci sequence: "))
-    if number <= 1:
-        print ("You entered an invalid number")
+    try:
+        number = int(input("Enter a number for the fibonacci sequence: "))
+        if number <= 1:
+            print ("You entered an invalid number")
+    except ValueError:
+        print("You entered words instead of a number. Please run the code again.")
     else:
         start = 0
         first_num = 0
