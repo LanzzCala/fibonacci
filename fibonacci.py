@@ -1,7 +1,7 @@
-def fib(number):
-    print (f"You entered {number}.")
+def fib():
+    number = int(input("Enter a number for the fibonacci sequence: "))
     if number <= 1:
-        return number
+        print ("You entered an invalid number")
     else:
         start = 0
         first_num = 0
@@ -14,4 +14,4 @@ def fib(number):
             first_num = result
             start += 1
 
-fib(10)
+fib()
